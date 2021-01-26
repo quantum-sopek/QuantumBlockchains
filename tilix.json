@@ -1,0 +1,67 @@
+{
+  "child": {
+    "child1": {
+      "child1": {
+        "directory": "",
+        "height": 503,
+        "overrideCommand": "docker logs -f 313c7cdbb127b808387486993859a2be864711cbf80f1ea89038bd09",
+        "profile": "01a6b0ef-1ba0-4464-90ad-3712a53ac686",
+        "readOnly": false,
+        "synchronizedInput": true,
+        "type": "Terminal",
+        "width": 960
+      },
+      "child2": {
+        "directory": "",
+        "height": 503,
+        "overrideCommand": "docker logs -f 91fdd0dd805f2341cd3b1eaec115453507e02e562c5329ea0cb54e78",
+        "profile": "3af7c3e3-99dd-4f62-a271-0e85900fbb5e",
+        "readOnly": false,
+        "synchronizedInput": true,
+        "type": "Terminal",
+        "width": 960
+      },
+      "orientation": 1,
+      "position": 0,
+      "ratio": 0.5,
+      "type": "Paned"
+    },
+    "child2": {
+      "child1": {
+        "directory": "",
+        "height": 503,
+        "overrideCommand": "docker logs -f 8c40b16173f481319563fb8b1d4c7c6f2c8574d4b2250266963abeb9",
+        "profile": "81bc95b3-2b35-4bf7-ba24-6cb8ee8e5786",
+        "readOnly": false,
+        "synchronizedInput": true,
+        "type": "Terminal",
+        "width": 960
+      },
+      "child2": {
+        "directory": "",
+        "height": 503,
+        "overrideCommand": "docker logs -f 2f5cbc3155ad4009a89eb013b8716d6b6f15f6492a3248f9dd797914",
+        "profile": "9cf946dc-f645-403c-abcb-0dde4d5ab565",
+        "readOnly": false,
+        "synchronizedInput": true,
+        "type": "Terminal",
+        "width": 960
+      },
+      "orientation": 1,
+      "position": 0,
+      "ratio": 0.5,
+      "type": "Paned"
+    },
+    "orientation": 0,
+    "position": 0,
+    "ratio": 0.5,
+    "type": "Paned"
+  },
+  "height": 1006,
+  "name": "Default",
+  "synchronizedInput": false,
+  "type": "Session",
+  "uuid": "",
+  "version": "1.0",
+  "width": 1920
+}

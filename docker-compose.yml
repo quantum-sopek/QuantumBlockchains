@@ -1,0 +1,70 @@
+version: '3.8'
+services:
+  client:
+    image: client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - '3015:3015'
+    environment:
+      - FIRST_PEER_HASH=313c7cdbb127b808387486993859a2be864711cbf80f1ea89038bd09
+      - SECOND_PEER_HASH=91fdd0dd805f2341cd3b1eaec115453507e02e562c5329ea0cb54e78
+      - THIRD_PEER_HASH=8c40b16173f481319563fb8b1d4c7c6f2c8574d4b2250266963abeb9
+      - FOURTH_PEER_HASH=2f5cbc3155ad4009a89eb013b8716d6b6f15f6492a3248f9dd797914
+    container_name: client
+  peer_1:
+    image: peer
+    build:
+      context: ./peer
+      dockerfile: Dockerfile
+    ports:
+      - '3001:3016'
+      - '3002:3017'
+    environment:
+      - MY_PEER_HASH=313c7cdbb127b808387486993859a2be864711cbf80f1ea89038bd09
+      - SECOND_PEER_HASH=91fdd0dd805f2341cd3b1eaec115453507e02e562c5329ea0cb54e78
+      - THIRD_PEER_HASH=8c40b16173f481319563fb8b1d4c7c6f2c8574d4b2250266963abeb9
+      - FOURTH_PEER_HASH=2f5cbc3155ad4009a89eb013b8716d6b6f15f6492a3248f9dd797914
+      - NORMAL_CONNECTION_PORT=3001
+      - QUANTUM_CONNECTION_PORT=3002
+    container_name: 313c7cdbb127b808387486993859a2be864711cbf80f1ea89038bd09
+  peer_2:
+    image: peer
+    ports:
+      - '3003:3016'
+      - '3004:3017'
+    environment:
+      - MY_PEER_HASH=91fdd0dd805f2341cd3b1eaec115453507e02e562c5329ea0cb54e78
+      - SECOND_PEER_HASH=313c7cdbb127b808387486993859a2be864711cbf80f1ea89038bd09
+      - THIRD_PEER_HASH=8c40b16173f481319563fb8b1d4c7c6f2c8574d4b2250266963abeb9
+      - FOURTH_PEER_HASH=2f5cbc3155ad4009a89eb013b8716d6b6f15f6492a3248f9dd797914
+      - NORMAL_CONNECTION_PORT=3003
+      - QUANTUM_CONNECTION_PORT=3004
+    container_name: 91fdd0dd805f2341cd3b1eaec115453507e02e562c5329ea0cb54e78
+  peer_3:
+    image: peer
+    ports:
+      - '3005:3016'
+      - '3006:3017'
+    environment:
+      - MY_PEER_HASH=8c40b16173f481319563fb8b1d4c7c6f2c8574d4b2250266963abeb9
+      - SECOND_PEER_HASH=313c7cdbb127b808387486993859a2be864711cbf80f1ea89038bd09
+      - THIRD_PEER_HASH=91fdd0dd805f2341cd3b1eaec115453507e02e562c5329ea0cb54e78
+      - FOURTH_PEER_HASH=2f5cbc3155ad4009a89eb013b8716d6b6f15f6492a3248f9dd797914
+      - NORMAL_CONNECTION_PORT=3005
+      - QUANTUM_CONNECTION_PORT=3006
+    container_name: 8c40b16173f481319563fb8b1d4c7c6f2c8574d4b2250266963abeb9
+  peer_4:
+    image: peer
+    ports:
+      - '3007:3016'
+      - '3008:3017'
+    environment:
+      - MY_PEER_HASH=2f5cbc3155ad4009a89eb013b8716d6b6f15f6492a3248f9dd797914
+      - SECOND_PEER_HASH=313c7cdbb127b808387486993859a2be864711cbf80f1ea89038bd09
+      - THIRD_PEER_HASH=91fdd0dd805f2341cd3b1eaec115453507e02e562c5329ea0cb54e78
+      - FOURTH_PEER_HASH=8c40b16173f481319563fb8b1d4c7c6f2c8574d4b2250266963abeb9
+      - NORMAL_CONNECTION_PORT=3007
+      - QUANTUM_CONNECTION_PORT=3008
+    container_name: 2f5cbc3155ad4009a89eb013b8716d6b6f15f6492a3248f9dd797914
