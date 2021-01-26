@@ -1,0 +1,354 @@
+body {
+  margin: 0;
+  background-image: url('./images/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 155px;
+  background-image: url('./images/header.png');
+  background-size: cover;
+}
+
+.next-stage-button {
+  position: fixed;
+  top: 35%;
+  left: 5%;
+  border: 1px solid #585858;
+  outline: none;
+  cursor: pointer;
+  width: 120px;
+  height: 30px;
+  color: #585858;
+  background: black;
+}
+
+.next-stage-button:hover {
+  border: 1px solid #F60F41;
+  color: #F60F41;
+}
+
+.previous-stage-button {
+  position: fixed;
+  top: 40%;
+  left: 5%;
+  border: 1px solid #585858;
+  outline: none;
+  cursor: pointer;
+  width: 120px;
+  height: 30px;
+  color: #585858;
+  background: black;
+}
+
+.previous-stage-button:hover {
+  border: 1px solid #F60F41;
+  color: #F60F41;
+}
+
+.first-peer {
+  position: fixed;
+  top: 350px;
+  left: 375px;
+  z-index: 150;
+}
+
+.second-peer {
+  position: fixed;
+  top: 350px;
+  left: 875px;
+  z-index: 150;
+}
+
+.third-peer {
+  position: fixed;
+  top: 150px;
+  left: 625px;
+  z-index: 150;
+}
+
+.fourth-peer {
+  position: fixed;
+  top: 550px;
+  left: 625px;
+  z-index: 150;
+}
+
+.proposal-peer-square1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 29px;
+  left: -25px;
+  background :#890924;
+  transform: skewY(30deg);
+}
+
+.proposal-peer-square2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 25px;
+  top: 29px;
+  background: #C50D34;
+  transform: skewY(-30deg);
+}
+
+.proposal-peer-square3 {
+  height: 29px;
+  width: 51px;
+  position: absolute;
+  background: #DD0E3B;
+  transform: skew(60deg, -30deg);
+}
+
+.other-peer-square1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 29px;
+  left: -25px;
+  background: #343434;
+  transform: skewY(30deg);
+}
+
+.other-peer-square2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 25px;
+  top: 29px;
+  background: #4b4b4b;
+  transform: skewY(-30deg);
+}
+
+.other-peer-square3 {
+  height: 29px;
+  width: 51px;
+  position: absolute;
+  background: #545454;
+  transform: skew(60deg, -30deg);
+}
+
+.transaction-details-container {
+  position: fixed;
+  top: 35%;
+  left: 75%;
+  height: 300px;
+  width: 300px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.transaction-details-text {
+  text-align: center;
+}
+
+.transaction-details-channel {
+  text-align: center;
+  color: #69db37;
+}
+
+@keyframes startEnd {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 30px 0;
+  }
+}
+
+@keyframes endStart {
+  0% {
+    background-position: 30px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.quantum-dots-1 {
+  position: fixed;
+  top: 365px;
+  left: 400px;
+  width: 500px;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #00acf1 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.normal-dots-1 {
+  position: fixed;
+  top: 385px;
+  left: 400px;
+  width: 500px;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #69db37 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.quantum-dots-2 {
+  position: fixed;
+  top: 365px;
+  left: 400px;
+  transform: rotate(-39deg);
+  transform-origin: left;
+  width: 300px;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #00acf1 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.normal-dots-2 {
+  position: fixed;
+  top: 385px;
+  left: 400px;
+  width: 350px;
+  transform: rotate(-39deg);
+  transform-origin: left;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #69db37 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.quantum-dots-3 {
+  position: fixed;
+  top: 365px;
+  left: 375px;
+  width: 350px;
+  transform: rotate(39deg);
+  transform-origin: left;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #00acf1 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.normal-dots-3 {
+  position: fixed;
+  top: 345px;
+  left: 375px;
+  transform: rotate(39deg);
+  transform-origin: left;
+  width: 350px;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #69db37 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.quantum-dots-4 {
+  position: fixed;
+  top: 580px;
+  left: 660px;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  width: 400px;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #00acf1 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.normal-dots-4 {
+  position: fixed;
+  top: 580px;
+  left: 640px;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  width: 400px;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #69db37 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.quantum-dots-5 {
+  position: fixed;
+  top: 365px;
+  left: 900px;
+  transform: rotate(-141deg);
+  transform-origin: left;
+  width: 350px;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #00acf1 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.normal-dots-5 {
+  position: fixed;
+  top: 385px;
+  left: 900px;
+  transform: rotate(-141deg);
+  transform-origin: left;
+  width: 350px;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #69db37 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.quantum-dots-6 {
+  position: fixed;
+  top: 595px;
+  left: 640px;
+  transform: rotate(-39deg);
+  transform-origin: left;
+  width: 350px;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #00acf1 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.normal-dots-6 {
+  position: fixed;
+  top: 575px;
+  left: 640px;
+  transform: rotate(-39deg);
+  transform-origin: left;
+  width: 350px;
+  height: 30px;
+  display: flex;
+  transition: none 0s ease 0s;
+  background-image: radial-gradient(10px, #69db37 50%, transparent 25%);
+  background-size: 30px;
+}
+
+.start-end {
+  animation: startEnd 1s infinite linear;
+}
+
+.end-start {
+  animation: endStart 1s infinite linear;
+}
+
+.dots {
+  display: none;
+}

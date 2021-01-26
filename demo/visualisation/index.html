@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="visualistation.css">
+  </head>
+  <body>
+    <div class="header"></div>
+    <div id="first-peer" class="first-peer">
+      <div class="proposal-peer-square1"></div>
+      <div class="proposal-peer-square2"></div>
+      <div class="proposal-peer-square3"></div>
+    </div>
+    <div id="second-peer" class="second-peer">
+      <div class="other-peer-square1"></div>
+      <div class="other-peer-square2"></div>
+      <div class="other-peer-square3"></div>
+    </div>
+    <div id="third-peer" class="third-peer">
+      <div class="other-peer-square1"></div>
+      <div class="other-peer-square2"></div>
+      <div class="other-peer-square3"></div>
+    </div>
+    <div id="fourth-peer" class="fourth-peer">
+      <div class="other-peer-square1"></div>
+      <div class="other-peer-square2"></div>
+      <div class="other-peer-square3"></div>
+    </div>
+    <svg width="1000" height="600" left="0" top="0" position="fixed">
+      <line id="first-second-quantum" x1="400" y1="380" x2="900" y2="380" stroke="#006790" />
+      <line id="first-second-normal" x1="400" y1="400" x2="900" y2="400" stroke="#3b7a1d" />
+
+      <line id="first-third-quantum" x1="400" y1="380" x2="650" y2="180" stroke="#006790" />
+      <line id="first-third-normal" x1="400" y1="400" x2="650" y2="200" stroke="#3b7a1d" />
+
+      <line id="first-fourth-quantum" x1="400" y1="400" x2="650" y2="600" stroke="#006790" />
+      <line id="first-fourth-normal" x1="400" y1="380" x2="650" y2="580" stroke="#3b7a1d" />
+
+      <line id="third-fourth-quantum" x1="660" y1="200" x2="660" y2="600"  stroke="#006790" />
+      <line id="third-fourth-normal" x1="640" y1="180" x2="640" y2="580" stroke="#3b7a1d" />
+
+      <line id="second-third-quantum" x1="650" y1="180" x2="900" y2="380" stroke="#006790" />
+      <line id="second-third-normal" x1="650" y1="200" x2="900" y2="400" stroke="#3b7a1d" />
+
+      <line id="second-fourth-quantum" x1="650" y1="600" x2="900" y2="400" stroke="#006790" />
+      <line id="second-fourth-normal" x1="650" y1="580" x2="900" y2="380" stroke="#3b7a1d" />
+    </svg>
+
+    <div class="transaction-details-container">
+      <p>Currently:</p>
+      <p id="transaction-details-text" class="transaction-details-text">Receiving transaction</p>
+      <p id="transaction-details-channel" class="transaction-details-channel"></p>
+    </div>
+
+    <div id="dots-first-second-quantum" class="dots quantum-dots-1 start-end"></div>
+    <div id="dots-first-second-normal" class="dots normal-dots-1 start-end"></div>
+    <div id="dots-first-third-quantum" class="dots quantum-dots-2 start-end"></div>
+    <div id="dots-first-third-normal" class="dots normal-dots-2 start-end"></div>
+    <div id="dots-first-fourth-quantum" class="dots quantum-dots-3 start-end"></div>
+    <div id="dots-first-fourth-normal" class="dots normal-dots-3 start-end"></div>
+    <div id="dots-fourth-third-quantum" class="dots quantum-dots-4 start-end"></div>
+    <div id="dots-fourth-third-normal" class="dots normal-dots-4 start-end"></div>
+    <div id="dots-second-third-quantum" class="dots quantum-dots-5 start-end"></div>
+    <div id="dots-second-third-normal" class="dots normal-dots-5 start-end"></div>
+    <div id="dots-fourth-second-quantum" class="dots quantum-dots-6 start-end"></div>
+    <div id="dots-fourth-second-normal" class="dots normal-dots-6 start-end"></div>
+
+    <div id="dots-second-first-quantum" class="dots quantum-dots-1 end-start"></div>
+    <div id="dots-second-first-normal" class="dots normal-dots-1 end-start"></div>
+    <div id="dots-third-first-quantum" class="dots quantum-dots-2 end-start"></div>
+    <div id="dots-third-first-normal" class="dots normal-dots-2 end-start"></div>
+    <div id="dots-fourth-first-quantum" class="dots quantum-dots-3 end-start"></div>
+    <div id="dots-fourth-first-normal" class="dots normal-dots-3 end-start"></div>
+    <div id="dots-third-fourth-quantum" class="dots quantum-dots-4 end-start"></div>
+    <div id="dots-third-fourth-normal" class="dots normal-dots-4 end-start"></div>
+    <div id="dots-third-second-quantum" class="dots quantum-dots-5 end-start"></div>
+    <div id="dots-third-second-normal" class="dots normal-dots-5 end-start"></div>
+    <div id="dots-second-fourth-quantum" class="dots quantum-dots-6 end-start"></div>
+    <div id="dots-second-fourth-normal" class="dots normal-dots-6 end-start"></div>
+
+    <button class="next-stage-button" onclick="onStageChange('nextStage')">Next stage</button>
+    <button class="previous-stage-button" onclick="onStageChange('previousStage')">Previous stage</button>
+    <script src="script.js"></script>
+  </body>
+</html>
